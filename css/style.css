@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+}
+
+style {
+  background-color: #f5f5f5;
+  border-left: 1px solid #ccc;
+  color: #333;
+  display: block;
+  font: 16px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  letter-spacing: .5px;
+  padding: 10px;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.container {
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 700px;
+}
+
+.row {
+  box-sizing: border-box;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-shape,
+.col-code {
+  box-sizing: border-box;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .col-code, .col-shape {
+    float: left;
+  }
+
+  .col-code {
+    width: 75%;
+  }
+
+  .col-shape {
+    width: 25%;
+  }
+
+}
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after,
+.container:after,
+.row:after {
+  clear: both;
+}
+
+ul > li {
+  margin-bottom: 40px;
+}

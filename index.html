@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSS Shapes</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>CSS Shapes</h1>
+    <h2>Standard</h2>
+
+    <ul>
+      <li>
+        <h3>Square</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="square"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.square {
+  background: #fb3;
+  height: 80px;
+  width: 80px;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Rectangle</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="rectangle"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.rectangle {
+  background: #fb3;
+  height: 60px;
+  width: 120px;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <h2>Border</h2>
+
+    <ul>
+      <li>
+        <h3>Triangle</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="triangle"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.triangle {
+  border: 50px solid transparent;
+  border-bottom-color: #fb3;
+  height: 0;
+  width: 0;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Right-angled Triangle</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="right-angled-triangle"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.right-angled-triangle {
+  border: 50px solid transparent;
+  border-bottom-color: #fb3;
+  border-left-color: #fb3;
+  height: 0;
+  width: 0;
+}
+            </style>
+          </div>
+        </div>        
+      </li>
+
+      <li>
+        <h3>Bubble</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="bubble"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.bubble {
+   background: #fb3;
+   border-radius: 10px;
+   height: 60px;
+   position: relative;
+   width: 120px;
+}
+
+.bubble::before {
+   border-top: 10px solid transparent;
+   border-right: 20px solid #fb3;
+   border-bottom: 10px solid transparent;
+   content: "";
+   height: 0;
+   position: absolute;
+   right: 100%;
+   top: 20px;
+   width: 0;
+}
+            </style>
+          </div>
+        </div>
+
+        <h4>Bubble-border</h4>
+        <div class="row">
+          <div class="col-shape">
+            <div class="bubble-border"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.bubble-border {
+   background: #fff;
+   border: 2px solid #fb3;
+   border-radius: 10px;
+   height: 60px;
+   position: relative;
+   width: 120px;
+}
+
+.bubble-border::before,
+.bubble-border::after {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 20px;
+   width: 0;
+}
+
+.bubble-border::before {
+   border-right: 20px solid #fb3;
+   right: 100%;
+}
+
+.bubble-border::after {
+   border-right: 20px solid #fff;
+   right: calc(100% - 4px);
+}
+            </style>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <h2>Radius</h2>
+
+    <ul>
+      <li>
+        <h3>Circle</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="circle"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.circle {
+  background: #fb3;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+            </style>
+          </div>
+        </div>    
+      </li>
+
+      <li>
+        <h3>Ring</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="ring"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.ring {
+  background: #fff;
+  border: 8px solid #fb3;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+            </style>
+          </div>
+        </div>    
+      </li>
+
+      <li>
+        <h3>Oval</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="oval"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.oval {
+  background: #fb3;
+  border-radius: 50%;
+  height: 60px;
+  width: 120px;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Semi-circle</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="semi-circle"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.semi-circle {
+  background: #fb3;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  height: 50px;
+  width: 100px;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Qurant</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="qurant"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.qurant {
+  background: #fb3;
+  border-radius: 100% 0 0 0;
+  height: 50px;
+  width: 50px;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <h2>Transform</h2>
+
+    <ul>
+      <li>
+        <h3>Parallelogram</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="parallelogram"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.parallelogram {
+  background: #fb3;
+  height: 80px;
+  transform: skew(20deg);
+  width: 100px;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Diamond</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="diamond"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.diamond {
+  background: #fb3;
+  height: 80px;
+  transform: rotate(45deg);
+  width: 80px;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Hook</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="hook"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.hook {
+  border: 0 solid #fb3;
+  border-width: 0 0 30px 30px;
+  height: 30px;
+  transform: rotate(-45deg);
+  width: 60px;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Cross</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="cross"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.cross {
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+
+.cross::before,
+.cross::after {
+  background-color: #fb3;
+  bottom: 0;
+  content: "";
+  height: 30px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+
+.cross::before {
+  transform: rotate(-45deg);
+}
+
+.cross::after {
+  transform: rotate(45deg);
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Trapezoid</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="trapezoid"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.trapezoid  {
+  background: #fb3;
+  height: 80px;
+  transform: perspective(8px) rotateX(2deg);
+  transform-origin: bottom;
+  width: 120px;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Right-angled Trapezoid</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="right-angled-trapezoid"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.right-angled-trapezoid  {
+  background: #fb3;
+  height: 80px;
+  transform: perspective(8px) rotateX(2deg);
+  transform-origin: left bottom;
+  width: 120px;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Heart</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="heart"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.heart {
+  height: 90px;
+  position: relative;
+  width: 100px;
+}
+
+.heart::before,
+.heart::after {
+  background: #fb3;
+  border-radius: 50px 50px 0 0;
+  content: "";
+  height: 80px;
+  left: 50px;
+  position: absolute;
+  top: 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  width: 50px;
+}
+
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin :100% 100%;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Tai Chi</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="tai-chi"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.tai-chi {
+  background: #fb3;
+  background-image: linear-gradient(to bottom, #fff 50%, #fb3 0);
+  border: 2px solid #fb3;
+  border-radius: 50%;
+  height: 96px;
+  position: relative;
+  width: 96px;
+}
+
+.tai-chi::before,
+.tai-chi::after {
+  border-radius: 50%;
+  content: "";
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+}
+
+.tai-chi::before {
+  left: 0;
+  background: #fff;
+  border: 18px solid #fb3;
+}
+
+.tai-chi::after {
+  left: 50%;
+  background: #fb3;
+  border: 18px solid #fff;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
