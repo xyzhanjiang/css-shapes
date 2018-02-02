@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CSS Shapes</title>
 <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -106,85 +108,6 @@
       </li>
 
       <li>
-        <h3>Diamond</h3>
-        <div class="row">
-          <div class="col-shape">
-            <div class="diamond"></div>
-          </div>
-          <div class="col-code">
-            <style contenteditable>
-.diamond {
-  background: #fb3;
-  height: 80px;
-  transform: rotate(45deg);
-  width: 80px;
-}
-            </style>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <h3>Hook</h3>
-        <div class="row">
-          <div class="col-shape">
-            <div class="hook"></div>
-          </div>
-          <div class="col-code">
-            <style contenteditable>
-.hook {
-  border: 0 solid #fb3;
-  border-width: 0 0 30px 30px;
-  height: 30px;
-  transform: rotate(-45deg);
-  width: 60px;
-}
-            </style>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <h3>Cross</h3>
-        <div class="row">
-          <div class="col-shape">
-            <div class="cross"></div>
-          </div>
-          <div class="col-code">
-            <style contenteditable>
-.cross {
-  height: 100px;
-  position: relative;
-  width: 100px;
-}
-
-.cross::before,
-.cross::after {
-  background-color: #fb3;
-  bottom: 0;
-  content: "";
-  height: 30px;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100px;
-}
-
-.cross::before {
-  transform: rotate(-45deg);
-}
-
-.cross::after {
-  transform: rotate(45deg);
-}
-            </style>
-          </div>
-        </div>
-      </li>
-
-      <li>
         <h3>Trapezoid</h3>
         <div class="row">
           <div class="col-shape">
@@ -225,71 +148,18 @@
       </li>
 
       <li>
-        <h3>Bubble</h3>
+        <h3>Diamond</h3>
         <div class="row">
           <div class="col-shape">
-            <div class="bubble"></div>
+            <div class="diamond"></div>
           </div>
           <div class="col-code">
             <style contenteditable>
-.bubble {
-   background: #fb3;
-   border-radius: 10px;
-   height: 60px;
-   position: relative;
-   width: 120px;
-}
-
-.bubble::before {
-   border-top: 10px solid transparent;
-   border-right: 20px solid #fb3;
-   border-bottom: 10px solid transparent;
-   content: "";
-   height: 0;
-   position: absolute;
-   right: 100%;
-   top: 20px;
-   width: 0;
-}
-            </style>
-          </div>
-        </div>
-
-        <h4>Bubble-border</h4>
-        <div class="row">
-          <div class="col-shape">
-            <div class="bubble-border"></div>
-          </div>
-          <div class="col-code">
-            <style contenteditable>
-.bubble-border {
-   background: #fff;
-   border: 2px solid #fb3;
-   border-radius: 10px;
-   height: 60px;
-   position: relative;
-   width: 120px;
-}
-
-.bubble-border::before,
-.bubble-border::after {
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  content: "";
-  height: 0;
-  position: absolute;
-  top: 20px;
-   width: 0;
-}
-
-.bubble-border::before {
-   border-right: 20px solid #fb3;
-   right: 100%;
-}
-
-.bubble-border::after {
-   border-right: 20px solid #fff;
-   right: calc(100% - 4px);
+.diamond {
+  background: #fb3;
+  height: 80px;
+  transform: rotate(45deg);
+  width: 80px;
 }
             </style>
           </div>
@@ -366,7 +236,7 @@
 }
             </style>
           </div>
-        </div>  
+        </div>
       </li>
 
       <li>
@@ -420,6 +290,215 @@
   border-radius: 100% 0 0 0;
   height: 50px;
   width: 50px;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Hook</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="hook"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.hook {
+  border: 0 solid #fb3;
+  border-width: 0 0 30px 30px;
+  height: 30px;
+  transform: rotate(-45deg);
+  width: 60px;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Hook Circle</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="hook-circle"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.hook-circle {
+  background-color: #fb3;
+  border-radius: 50%;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+
+.hook-circle::before {
+  border: 0 solid #fff;
+  border-width: 0 0 14px 14px;
+  bottom: 0;
+  content: "";
+  height: 24px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 48px;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Cross</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="cross"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.cross {
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+
+.cross::before,
+.cross::after {
+  background-color: #fb3;
+  bottom: 0;
+  content: "";
+  height: 30px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+
+.cross::before {
+  transform: rotate(-45deg);
+}
+
+.cross::after {
+  transform: rotate(45deg);
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Cross Circle</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="cross-circle"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.cross-circle {
+  background-color: #fb3;
+  border-radius: 50%;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+
+.cross-circle::before,
+.cross-circle::after {
+  background-color: #fff;
+  bottom: 0;
+  content: "";
+  height: 12px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+}
+
+.cross-circle::before {
+  transform: rotate(-45deg);
+}
+
+.cross-circle::after {
+  transform: rotate(45deg);
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Bubble</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="bubble"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.bubble {
+   background: #fb3;
+   border-radius: 10px;
+   height: 60px;
+   position: relative;
+   width: 120px;
+}
+
+.bubble::before {
+   border-top: 10px solid transparent;
+   border-right: 20px solid #fb3;
+   border-bottom: 10px solid transparent;
+   content: "";
+   height: 0;
+   position: absolute;
+   right: 100%;
+   top: 20px;
+   width: 0;
+}
+            </style>
+          </div>
+        </div>
+
+        <h4>Bubble-border</h4>
+        <div class="row">
+          <div class="col-shape">
+            <div class="bubble-border"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.bubble-border {
+   background: #fff;
+   border: 2px solid #fb3;
+   border-radius: 10px;
+   height: 60px;
+   position: relative;
+   width: 120px;
+}
+
+.bubble-border::before,
+.bubble-border::after {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 20px;
+   width: 0;
+}
+
+.bubble-border::before {
+   border-right: 20px solid #fb3;
+   right: 100%;
+}
+
+.bubble-border::after {
+   border-right: 20px solid #fff;
+   right: calc(100% - 4px);
 }
             </style>
           </div>
@@ -503,6 +582,173 @@
   left: 50%;
   background: #fb3;
   border: 18px solid #fff;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Star</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="star"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.star {
+   border-bottom: 42px solid #fb3;
+   border-left: 60px solid transparent;
+   border-right: 60px solid transparent;
+   display: block;
+   height: 0px;
+   margin: 30px 0;
+   position: relative;
+   transform: rotate(35deg);
+   width: 0px;
+}
+
+.star::before {
+  border-bottom: 48px solid #fb3;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  content: "";
+  height: 0;
+  left: -39px;
+  position: absolute;
+  top: -27px;
+  transform: rotate(-35deg);
+  width: 0;
+}
+
+.star::after {
+  border-bottom: 42px solid #fb3;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  content: "";
+  left: -63px;
+  height: 0;
+  position: absolute;
+  top: 3px;
+  transform: rotate(-70deg);
+  width: 0;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Hexagram</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="hexagram"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.hexagram {
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+
+.hexagram::before {
+  border-bottom: 70px solid #fb3;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+.hexagram::after {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 70px solid #fb3;
+  content: "";
+  left: 0;
+  height: 0;
+  position: absolute;
+  top: 24px;
+  width: 0;
+}
+            </style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Countdown</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="countdown"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+@keyframes countdown-counter {
+  0% {
+    content: "9";
+  }
+
+  10% {
+    content: "9";
+  }
+
+  20% {
+    content: "8";
+  }
+
+  30% {
+    content: "7";
+  }
+
+  40% {
+    content: "6";
+  }
+
+  50% {
+    content: "5";
+  }
+
+  60% {
+    content: "4";
+  }
+
+  70% {
+    content: "3";
+  }
+
+  80% {
+    content: "2";
+  }
+
+  90% {
+    content: "1";
+  }
+
+  to {
+    content: "0";
+  }
+}
+
+.countdown {
+  background-color: #fff;
+  border: 8px solid #fb3;
+  border-radius: 50%;
+  height: 84px;
+  text-align: center;
+  width: 84px;
+}
+
+.countdown::before {
+  animation: countdown-counter 10s step-start infinite;
+  border-radius: 50%;
+  color: #fb3;
+  content: "9";
+  font: 700 64px/84px arial;
 }
             </style>
           </div>
