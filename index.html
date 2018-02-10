@@ -5,6 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CSS Shapes</title>
+<meta name="author" content="xyzhanjiang">
+<meta name="description" content="css shapes">
 <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -26,7 +28,7 @@
   height: 80px;
   width: 80px;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -44,7 +46,7 @@
   height: 60px;
   width: 120px;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -60,10 +62,10 @@
 .triangle {
   border: 50px solid transparent;
   border-bottom-color: #fb3;
-  height: 0;
-  width: 0;
+  height: 100px;
+  width: 100px;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -80,10 +82,10 @@
   border: 50px solid transparent;
   border-bottom-color: #fb3;
   border-left-color: #fb3;
-  height: 0;
-  width: 0;
+  height: 100px;
+  width: 100px;
 }
-            </style>
+</style>
           </div>
         </div>        
       </li>
@@ -102,7 +104,7 @@
   transform: skew(20deg);
   width: 100px;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -122,7 +124,7 @@
   transform-origin: bottom;
   width: 120px;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -142,7 +144,7 @@
   transform-origin: left bottom;
   width: 120px;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -161,7 +163,7 @@
   transform: rotate(45deg);
   width: 80px;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -180,61 +182,7 @@
   height: 100px;
   width: 100px;
 }
-            </style>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <h3>Ring</h3>
-        <div class="row">
-          <div class="col-shape">
-            <div class="ring"></div>
-          </div>
-          <div class="col-code">
-            <style contenteditable>
-.ring {
-  background: #fff;
-  border: 16px solid #fb3;
-  border-radius: 50%;
-  height: 68px;
-  width: 68px;
-}
-            </style>
-          </div>
-        </div>
-        <h3>Ring Two Tone</h3>
-        <div class="row">
-          <div class="col-shape">
-            <div class="ring-two-tone"></div>
-          </div>
-          <div class="col-code">
-            <style contenteditable>
-.ring-two-tone {
-  background: #fff;
-  border: 16px solid #fb3;
-  border-right-color: #9acd32;
-  border-top-color: #9acd32;
-  border-radius: 50%;
-  height: 68px;
-  position: relative;
-  width: 68px;
-}
-
-.ring-two-tone::before {
-  border: 16px solid transparent;
-  border-radius: 50%;
-  border-right-color: #fb3;
-  border-top-color: #fb3;
-  content: "";
-  height: 68px;
-  left: -16px;
-  position: absolute;
-  top: -16px;
-  transform: rotate(45deg);
-  width: 68px;
-}
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -253,7 +201,7 @@
   height: 60px;
   width: 120px;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -272,7 +220,7 @@
   height: 50px;
   width: 100px;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -291,7 +239,96 @@
   height: 50px;
   width: 50px;
 }
-            </style>
+</style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Ring</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="ring"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.ring {
+  background: #fff;
+  border: 16px solid #fb3;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+</style>
+          </div>
+        </div>
+        <h3>Ring Two Tone</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="ring-two-tone"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.ring-two-tone {
+  background: #fff;
+  border: 16px solid #fb3;
+  border-right-color: #9acd32;
+  border-top-color: #9acd32;
+  border-radius: 50%;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+
+.ring-two-tone::before {
+  border: 16px solid transparent;
+  border-radius: 50%;
+  border-right-color: #fb3;
+  border-top-color: #fb3;
+  content: "";
+  height: 100px;
+  left: -16px;
+  position: absolute;
+  top: -16px;
+  transform: rotate(45deg);
+  width: 100px;
+}
+</style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Radio</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="radio"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.radio {
+  background: #fff;
+  border: 6px solid #fb3;
+  border-radius: 50%;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+
+.radio::after {
+  background: #fb3;
+  border-radius: 50%;
+  bottom: 0;
+  content: " ";
+  height: 64px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 64px;
+}
+</style>
           </div>
         </div>
       </li>
@@ -307,11 +344,11 @@
 .hook {
   border: 0 solid #fb3;
   border-width: 0 0 30px 30px;
-  height: 30px;
+  height: 60px;
   transform: rotate(-45deg);
-  width: 60px;
+  width: 90px;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -337,16 +374,51 @@
   border-width: 0 0 14px 14px;
   bottom: 0;
   content: "";
-  height: 24px;
+  height: 38px;
   left: 0;
   margin: auto;
   position: absolute;
   right: 0;
   top: 0;
   transform: rotate(-45deg);
-  width: 48px;
+  width: 62px;
 }
-            </style>
+</style>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <h3>Checkbox</h3>
+        <div class="row">
+          <div class="col-shape">
+            <div class="checkbox"></div>
+          </div>
+          <div class="col-code">
+            <style contenteditable>
+.checkbox {
+  border: 4px solid #fb3;
+  border-radius: 1em;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+
+.checkbox::before {
+  border: 0 solid #fb3;
+  border-width: 0 0 14px 14px;
+  bottom: 0;
+  content: "";
+  height: 38px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 62px;
+}
+</style>
           </div>
         </div>
       </li>
@@ -386,7 +458,7 @@
 .cross::after {
   transform: rotate(45deg);
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -428,7 +500,7 @@
 .cross-circle::after {
   transform: rotate(45deg);
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -460,7 +532,7 @@
    top: 20px;
    width: 0;
 }
-            </style>
+</style>
           </div>
         </div>
 
@@ -500,7 +572,7 @@
    border-right: 20px solid #fff;
    right: calc(100% - 4px);
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -538,7 +610,7 @@
   transform: rotate(45deg);
   transform-origin :100% 100%;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -556,20 +628,20 @@
   background-image: linear-gradient(to bottom, #fff 50%, #fb3 0);
   border: 2px solid #fb3;
   border-radius: 50%;
-  height: 96px;
+  height: 100px;
   position: relative;
-  width: 96px;
+  width: 100px;
 }
 
 .tai-chi::before,
 .tai-chi::after {
   border-radius: 50%;
   content: "";
-  height: 12px;
+  height: 48px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 12px;
+  width: 48px;
 }
 
 .tai-chi::before {
@@ -583,7 +655,7 @@
   background: #fb3;
   border: 18px solid #fff;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -601,11 +673,11 @@
    border-left: 60px solid transparent;
    border-right: 60px solid transparent;
    display: block;
-   height: 0px;
+   height: 42px;
    margin: 30px 0;
    position: relative;
    transform: rotate(35deg);
-   width: 0px;
+   width: 120px;
 }
 
 .star::before {
@@ -613,12 +685,12 @@
   border-left: 18px solid transparent;
   border-right: 18px solid transparent;
   content: "";
-  height: 0;
+  height: 48px;
   left: -39px;
   position: absolute;
   top: -27px;
   transform: rotate(-35deg);
-  width: 0;
+  width: 36px;
 }
 
 .star::after {
@@ -627,13 +699,13 @@
   border-right: 60px solid transparent;
   content: "";
   left: -63px;
-  height: 0;
+  height: 42px;
   position: absolute;
   top: 3px;
   transform: rotate(-70deg);
-  width: 0;
+  width: 120px;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -657,11 +729,11 @@
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   content: "";
-  height: 0;
+  height: 70px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 0;
+  width: 80px;
 }
 
 .hexagram::after {
@@ -670,12 +742,12 @@
   border-top: 70px solid #fb3;
   content: "";
   left: 0;
-  height: 0;
+  height: 70px;
   position: absolute;
   top: 24px;
-  width: 0;
+  width: 80px;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
@@ -738,9 +810,9 @@
   background-color: #fff;
   border: 8px solid #fb3;
   border-radius: 50%;
-  height: 84px;
+  height: 100px;
   text-align: center;
-  width: 84px;
+  width: 100px;
 }
 
 .countdown::before {
@@ -750,7 +822,7 @@
   content: "9";
   font: 700 64px/84px arial;
 }
-            </style>
+</style>
           </div>
         </div>
       </li>
