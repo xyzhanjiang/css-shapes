@@ -81,3 +81,9 @@ style {
 ul > li {
   margin-bottom: 40px;
 }
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
